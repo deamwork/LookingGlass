@@ -12,34 +12,10 @@ if (file_exists('LookingGlass/Config.php')) {
 <!DOCTYPE html>
 <html lang="en">
 <!--
-                 __ _
-               .: .' '.
-              /: /     \_
-             ;: ;  ,-'/`:\
-             |: | |  |() :|
-             ;: ;  '-.\_:/
-              \: \     /`
-               ':_'._.'
-                  ||
-                 /__\
-      .---.     {====}
-    .'   _,"-,__|::  |
-   /    ((O)=;--.::  |
-  ;      `|: |  |::  |
-  |       |: |  |::  |            *****************************
-  |       |: |  |::  |            * LookingGlass by Telephone *
-  |       |: |  |::  |            *  http://iamtelephone.com  *
-  |       |: |  |::  |            *****************************
-  |       |: |  |::  |
-  |      /:'__\ |::  |
-  |     [______]|::  |
-  |      `----` |::  |__
-  |         _.--|::  |  ''--._
-  ;       .'  __{====}__      '.
-   \    .'_.-'._ `""` _.'-._    '.
-    '--'/`      `''''`      `\    '.__
-        '._                _.'
-           `""--......--""`
+*****************************
+**   Looking Glass by Telephone **
+**     Refined by Jason           **
+*****************************
 -->
   <head>
     <meta charset="utf-8">
@@ -78,7 +54,7 @@ if (file_exists('LookingGlass/Config.php')) {
               <p>Server Location: <b><?php echo $serverLocation; ?></b></p>
               <div style="margin-left: 10px;">
                 <p>Test IPv4: <?php echo $ipv4; ?></p>
-                <p><?php if (!empty($ipv6)) { echo 'Test IPv6: ',$ipv6; } ?></p>
+                <p><?php if (!empty($ipv6)) { echo 'Test IPv6: '.$ipv6; } ?></p>
                 <p>Test files: <?php
                   foreach ($testFiles as $val) {
                     echo "<a href=\"{$val}.test\" id=\"testfile\">{$val}</a> ";
